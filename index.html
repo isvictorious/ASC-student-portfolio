@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Front End Web Developer - Julie Code</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- CSS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="styles.css" class="css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- About Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">About Julie Code</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Overview</h3>
+            <p>
+              Meatball pastrami salami, jerky sirloin shankle prosciutto drumstick chicken tenderloin. Turkey beef meatball ham hock landjaeger strip steak tenderloin ball tip porchetta tri-tip kielbasa picanha chuck tail sausage.
+            </p>
+            <p>
+              <ul>
+                <li>Meatball on Rye</li>
+                <li>Pastrami</li>
+                <li>Roast Beef</li>
+                <li>Sirloin</li>
+              </ul>
+            </p>
+            <h3>Technical Skills</h3>
+            <p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Jquery</li>
+                <li>Javascript</li>
+              </ul>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <p>Thanks for checking me out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /about modal -->
+
+    <!-- Hire Me Modal -->
+    <div class="modal fade" id="hireModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Woo-hoo!</h4>
+          </div>
+          <div class="modal-body">
+            <h3>I'm for Hire :-)</h3>
+            <p>
+              You can connect with me on Twitter, LinkedIn or GitHub below.
+            </p>
+            <ul class="list-inline text-center">
+              <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <p>Thanks for checking me out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /hire-me modal -->
+
+    <!-- Fixed navbar -->
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">Julie Code</a>
+           <p class="navbar-text navbar-right">Junior Front End Developer</p>
+         </div>
+         <div id="navbar" class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+             <!-- <li><a href="#">Portfolio</a></li> -->
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="#" data-toggle="modal" data-target="#myModal">About</a></li>
+             <li><a href="#" data-toggle="modal" data-target="#hireModal">Hire</a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-github"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+           </ul>
+         </div><!--/.nav-collapse -->
+       </div>
+     </nav>
+
+     <!-- Jumbotron -->
+     <div class="jumbotron animated fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Hi, I'm Julie Code!</h1>
+            <p>Bacon ipsum dolor amet ground round shankle leberkas salami alcatra pork chop. Short ribs landjaeger pork spare ribs ground round. Shank ham burgdoggen jerky chuck ham hock flank turkey.</p>
+            <p>Pork spare ribs pork chop meatball rump.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="/images/headshot.png" class="headshot img-responsive img-circle float-right" alt="Responsive image">
+          </div>
+        </div>
+     </div><!-- /container -->
+     </div>
+
+     <div class="container">
+     <div class="row">
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="https://unsplash.it/400/300/?image=1062" alt="Portfolio Project" class="img-responsive" alt="Responsive image">
+           <div class="caption">
+             <h3>Puppy Pirates</h3>
+             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+             <h4>Technologies Used</h4>
+             <ul class="list-inline">
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>Javascript</li>
+             </ul>
+             <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Git Repo</a></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="https://unsplash.it/400/300/?image=1048" class="img-responsive" alt="Responsive image" alt="Portfolio Project">
+           <div class="caption">
+             <h3>Building Builder</h3>
+             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+             <h4>Technologies Used</h4>
+             <ul class="list-inline">
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>Javascript</li>
+             </ul>
+             <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Git Repo</a></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="https://unsplash.it/400/300/?image=1042" alt="Portfolio Project" class="img-responsive center-block" alt="Julie Code headshot">
+           <div class="caption">
+             <h3>Space Quiz</h3>
+             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+             <h4>Technologies Used</h4>
+             <ul class="list-inline">
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>Javascript</li>
+             </ul>
+             <p><a href="#" class="btn btn-primary" role="button">Demo</a> <a href="#" class="btn btn-default" role="button">Git Repo</a></p>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div> <!-- /container -->
+
+    <footer class="portfolio-footer">
+      <div class="container">
+        <p>
+          &copy; 2017 All portfolio projects and text are fictional.
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+</html>
