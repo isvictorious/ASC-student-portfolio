@@ -4,3 +4,5 @@ A demo student portfolio built in 4 hours for part of an interview for [All Star
 Uses HTML5, Boostrap, and Animate.css
 
 [View Demo](https://isvictorious.github.io/ASC-student-portfolio/)
+
+For contributions please do a pull request
